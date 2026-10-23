@@ -1,0 +1,48 @@
+/* ============================================================
+   Anisha — Typography
+   Cormorant Garamond  ·  editorial display serif (romantic, high-contrast)
+   Sacramento          ·  signature script — echoes the engraving's cursive
+   Mulish              ·  quiet humanist sans for body & UI
+   IBM Plex Mono       ·  small caps meta / dates / tokens
+
+   NOTE: no font files were supplied with the brand. These are
+   Google-Fonts matches chosen for the engraved-script + refined
+   serif look. See readme.md → Fonts to swap in real files.
+   ============================================================ */
+
+:root {
+  /* families */
+  --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+  --font-script:  'Sacramento', 'Snell Roundhand', cursive;
+  --font-body:    'Mulish', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* type scale — display leans large & airy for the serif */
+  --fs-display-xl: clamp(3.5rem, 8vw, 6.5rem); /* @kind font */
+  --fs-display-l:  clamp(2.75rem, 5vw, 4.25rem); /* @kind font */
+  --fs-display-m:  clamp(2rem, 3.4vw, 3rem); /* @kind font */
+  --fs-heading:    1.75rem; /* @kind font */
+  --fs-subhead:    1.25rem; /* @kind font */
+  --fs-lead:       1.1875rem; /* @kind font */
+  --fs-body:       1rem; /* @kind font */
+  --fs-small:      0.875rem; /* @kind font */
+  --fs-meta:       0.75rem; /* @kind font */
+
+  /* weights */
+  --fw-light: 300; /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium: 500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold: 700; /* @kind font */
+
+  /* line heights */
+  --lh-tight: 1.04; /* @kind font */
+  --lh-snug: 1.2; /* @kind font */
+  --lh-normal: 1.4; /* @kind font */
+  --lh-relaxed: 1.65; /* @kind font */
+
+  /* tracking — wide caps label is a brand signature */
+  --ls-eyebrow: 0.22em; /* @kind font */
+  --ls-tight: -0.01em; /* @kind font */
+  --ls-normal: 0; /* @kind font */
+}

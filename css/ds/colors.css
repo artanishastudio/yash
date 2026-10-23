@@ -1,0 +1,147 @@
+/* ============================================================
+   Anisha — Color tokens
+   Source: user-supplied palette (Base / Signal / Interactive).
+   :root = light mode (left column). [data-theme="dark"] = dark mode (right column).
+   ============================================================ */
+:root {
+  /* ---------- BASE ---------- */
+  --primary-standard:   #240030;
+  --primary-subtle:     #91689E;
+  --secondary-standard: #1A9C61;
+  --secondary-subtle:   #A2F2CF;
+  --gray-standard:      #151415;
+  --gray-subtle:        #4A494A;
+  --gray-faint:         #8A878A;
+  --gray-disabled:      rgba(163, 160, 164, 0.32);
+  --product-standard:   #246DFF;
+  --product-subtle:     #E5EEFF;
+  --trueblack-standard: #000000;
+  --trueblack-subtle:   rgba(0, 0, 0, 0.80);
+  --trueblack-faint:    rgba(0, 0, 0, 0.48);
+  --trueblack-disabled: rgba(0, 0, 0, 0.32);
+  --truewhite-standard: #FFFFFF;
+  --truewhite-subtle:   rgba(255, 255, 255, 0.80);
+  --truewhite-faint:    rgba(255, 255, 255, 0.48);
+  --truewhite-disabled: rgba(255, 255, 255, 0.32);
+
+  /* ---------- SIGNAL ---------- */
+  --positive-standard: #1F983A;
+  --positive-subtle:   #22A940;
+  --positive-faint:    #ADE6BA;
+  --positive-disabled: rgba(34, 169, 64, 0.16);
+  --negative-standard: #B00202;
+  --negative-subtle:   #CF1B1B;
+  --negative-faint:    #FF8080;
+  --negative-disabled: rgba(207, 27, 27, 0.16);
+  --notice-standard:   #B97502;
+  --notice-subtle:     #D79900;
+  --notice-faint:      #FFD688;
+  --notice-disabled:   rgba(215, 153, 0, 0.32);
+  --neutral-standard:  #1C1B1C;
+  --neutral-subtle:    #5C5A5C;
+  --neutral-faint:     #A3A0A4;
+  --neutral-disabled:  rgba(163, 160, 164, 0.32);
+
+  /* ---------- INTERACTIVE ---------- */
+  --int-primary-standard:   #240030;
+  --int-primary-subtle:     #633373;
+  --int-primary-disabled:   rgba(60, 0, 80, 0.16);
+  --int-gray-standard:      #151415;
+  --int-gray-subtle:        #4A494A;
+  --int-gray-disabled:      rgba(163, 160, 164, 0.32);
+  --int-gray-inverse-std:   #FCFBFC;
+  --int-gray-inverse-subtle:#A3A0A4;
+  --int-gray-inverse-dis:   rgba(163, 160, 164, 0.16);
+
+  /* ================= Semantic aliases ================= */
+  --surface-page:    var(--truewhite-standard);
+  --surface-raised:  var(--int-gray-inverse-std);
+  --surface-sunk:    #F6F2F8;                 /* Primary/Standard (dark value) as light tint */
+  --surface-ink:     var(--primary-standard); /* dark sections */
+  --surface-ink-2:   var(--gray-standard);
+
+  --text-heading:  var(--gray-standard);
+  --text-body:     var(--gray-subtle);
+  --text-muted:    var(--gray-faint);
+  --text-disabled: var(--gray-disabled);
+  --text-on-dark:  #F6F2F8;
+  --text-on-dark-muted: var(--truewhite-subtle);
+
+  --accent:        var(--int-primary-standard);
+  --accent-hover:  var(--int-primary-subtle);
+  --accent-soft:   #E8DDEE;
+  --accent-ink:    var(--truewhite-standard);  /* text sitting on accent */
+  --accent-on-dark: #D8C6E2;                   /* accent used on dark surfaces */
+  --accent-2:      var(--secondary-standard);
+  --link:          var(--product-standard);
+
+  --line:        rgba(21, 20, 21, 0.12);
+  --line-strong: rgba(21, 20, 21, 0.24);
+  --line-on-dark: rgba(255, 255, 255, 0.16);
+
+  --focus-ring:  rgba(145, 104, 158, 0.5);
+
+  --ok:    var(--positive-standard);
+  --warn:  var(--notice-standard);
+  --error: var(--negative-standard);
+
+  /* ===== Legacy aliases (pre-palette names still used by components) ===== */
+  --sand-50: #F6F2F8; --sand-100: #F6F2F8; --sand-200: #E8DDEE; --sand-300: #D8C6E2;
+  --sand-400: #A3A0A4; --sand-500: #8A878A; --sand-600: #4A494A; --sand-700: #4A494A;
+  --ink-900: #151415; --ink-800: #4A494A; --ink-700: #5C5A5C;
+  --brass-200: #E8DDEE; --brass-300: #D8C6E2; --brass-400: #91689E; --brass-500: #240030;
+  --brass-600: #633373; --brass-700: #240030;
+  --navy-900: #240030; --navy-800: #151415; --navy-700: #67407D; --navy-500: #91689E;
+  --white: #FFFFFF; --black: #000000;
+}
+
+[data-theme="dark"] {
+  --primary-standard:   #F6F2F8;
+  --primary-subtle:     #67407D;
+  --secondary-standard: #E2F6ED;
+  --secondary-subtle:   #30684F;
+  --gray-standard:      #E6E4E7;
+  --gray-subtle:        #A3A0A4;
+  --gray-faint:         #8A878A;
+  --gray-disabled:      rgba(74, 73, 74, 0.32);
+  --product-standard:   #6A82B4;
+  --product-subtle:     #18294C;
+
+  --positive-standard: #6FD385;
+  --positive-subtle:   #34C655;
+  --positive-faint:    #197A2F;
+  --positive-disabled: rgba(34, 169, 64, 0.32);
+  --negative-standard: #FF8080;
+  --negative-subtle:   #FF4747;
+  --negative-faint:    #B00202;
+  --negative-disabled: rgba(207, 27, 27, 0.32);
+  --notice-standard:   #F2B316;
+  --notice-subtle:     #D79900;
+  --notice-faint:      #9F6402;
+  --notice-disabled:   rgba(215, 153, 0, 0.32);
+  --neutral-standard:  #F3F1F3;
+  --neutral-subtle:    #A3A0A4;
+  --neutral-faint:     #757375;
+  --neutral-disabled:  rgba(163, 160, 164, 0.24);
+
+  --int-primary-standard:   #E8DDEE;
+  --int-primary-subtle:     #D8C6E2;
+  --int-primary-disabled:   rgba(155, 110, 180, 0.32);
+  --int-gray-standard:      #E6E4E7;
+  --int-gray-subtle:        #A3A0A4;
+  --int-gray-disabled:      rgba(163, 160, 164, 0.32);
+  --int-gray-inverse-std:   #151415;
+  --int-gray-inverse-subtle:#5C5A5C;
+  --int-gray-inverse-dis:   rgba(163, 160, 164, 0.32);
+
+  --surface-page:   #151415;
+  --surface-raised: #1C1B1C;
+  --surface-sunk:   #000000;
+  --surface-ink:    #240030;
+  --surface-ink-2:  #000000;
+  --text-disabled:  var(--gray-disabled);
+  --accent-soft:    rgba(155, 110, 180, 0.24);
+  --accent-ink:     #240030;
+  --line:        rgba(255, 255, 255, 0.12);
+  --line-strong: rgba(255, 255, 255, 0.24);
+}

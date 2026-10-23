@@ -1,0 +1,37 @@
+/* ============================================================
+   Anisha — Radius, borders, shadows, motion
+   Keepsake softness: gently rounded, warm low shadows,
+   unhurried easing. Nothing sharp, nothing bouncy.
+   ============================================================ */
+:root {
+  /* corner radii — soft, hand-finished */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* borders */
+  --border-hair: 1px solid var(--line);
+  --border-strong: 1px solid var(--line-strong);
+
+  /* shadows — tinted with Primary aubergine, never blue */
+  --shadow-sm: 0 1px 2px rgba(36, 0, 48, 0.06),
+               0 1px 3px rgba(36, 0, 48, 0.05);
+  --shadow-md: 0 4px 10px rgba(36, 0, 48, 0.07),
+               0 8px 24px rgba(36, 0, 48, 0.06);
+  --shadow-lg: 0 12px 28px rgba(36, 0, 48, 0.10),
+               0 30px 60px rgba(36, 0, 48, 0.10);
+  --shadow-glow: 0 10px 40px rgba(145, 104, 158, 0.28); /* primary-subtle lift on dark */
+
+  /* motion — slow, filmic */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.5, 0, 0.2, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur: 240ms; /* @kind other */
+  --dur-slow: 520ms; /* @kind other */
+
+  /* image treatment — the brand's photos run warm & filmic */
+  --img-warm: saturate(1.03) contrast(1.02); /* @kind other */
+}

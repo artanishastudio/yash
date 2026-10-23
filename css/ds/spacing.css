@@ -1,0 +1,29 @@
+/* ============================================================
+   Anisha — Spacing & layout
+   8px soft grid with a couple of finer steps for tight UI.
+   ============================================================ */
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --space-11: 176px;
+
+  /* section rhythm on the marketing site */
+  --section-y: clamp(72px, 11vw, 160px); /* @kind spacing */
+
+  /* content widths */
+  --measure: 62ch;          /* comfortable prose */
+  --container: 1200px;      /* standard page container */
+  --container-wide: 1360px;
+  --container-narrow: 780px;
+
+  --gutter: clamp(20px, 5vw, 64px); /* @kind spacing */
+}
